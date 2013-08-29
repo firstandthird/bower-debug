@@ -1,4 +1,6 @@
+(function(w) {
 
+var oldDebug = w.debug;
 /**
  * Create a debugger with the given `name`.
  *
@@ -124,8 +126,17 @@ function coerce(val) {
   return val;
 }
 
+debug.noConflict = function() {
+  w.debug = oldDebug;
+  return debug;
+}
+
+//expose globally
+w.debug = debug;
+
 // persist
 
 try {
   if (window.localStorage) debug.enable(localStorage.debug);
 } catch(e){}
+})(window);
