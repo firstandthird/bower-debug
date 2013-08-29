@@ -1,11 +1,11 @@
 # debug
 
-  tiny node.js debugging utility modelled after node core's debugging technique.
+  tiny js debugging utility modelled after node core's debugging technique.
 
 ## Installation
 
 ```
-$ npm install debug
+$ bower install debug
 ```
 
 ## Usage

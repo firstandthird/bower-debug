@@ -1,11 +1,5 @@
 
 /**
- * Expose `debug()` as the module.
- */
-
-module.exports = debug;
-
-/**
  * Create a debugger with the given `name`.
  *
  * @param {String} name
